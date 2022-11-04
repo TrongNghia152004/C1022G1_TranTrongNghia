@@ -1,0 +1,15 @@
+Begin  
+     Input a
+     a <= 100
+     If (a>=75)
+        Output Loại A
+     Else if (60<=a)
+        Output loại B
+     Else if (45<=a)
+        Output loại C
+     Else if (35<=a)
+     Output loại D
+     Else
+        Output loại E
+    End If
+End

@@ -1,0 +1,7 @@
+Start
+    Input Math là điểm toán
+          Physics là điểm lý
+          Chemistry là điểm hoá
+    Average = (Math + Physics + Chemistry) / 3      
+    Output Average
+End
