@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form lấy survey khách hàng</title>
+    <link rel="stylesheet" href="baitap4.css">
+</head>
+<body>
+    <h1>Market Research Survey</h1>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <h4>What is your age range?</h4>
+     <select name="old" id="old">
+        <option value="" class="naruto">18-24</option>
+        <option value="" class="naruto">25-34</option>
+        <option value="" class="naruto">35-50</option>
+        <option value="" class="naruto">50+</option>
+     </select>
+    <h4>What is your yearly income range?</h4>
+    <select name="money" id="money">
+    <option value="">$0-$25,000</option>
+    <option value="">$25,001-50,$50,000</option>
+    <option value="">$50,001-100,000</option>
+    <option value="">$100,000+</option>
+    </select>
+    <h4>Gender Identity</h4>
+    <input type="radio" class="naruto" name="gender">Male <br>
+    <input type="radio" class="naruto" name="gender">Female <br>
+    <input type="radio" class="naruto" name="gender">Nonbinary <br>
+    <input type="radio" class="naruto" name="gender">Other <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text">
+    <h4>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h4>
+    <input type="checkbox" class="naruto">Product 1<br>
+    <input type="checkbox" class="naruto">Product 2<br>
+    <input type="checkbox" class="naruto">Product 3
+    <h4>What would you pay for the new product?</h4>
+    <input type="radio" class="naruto" name="time">Daily <br>
+    <input type="radio" class="naruto" name="time">Weekly <br>
+    <input type="radio"class="naruto"name="time">Monthly
+    <h4>What would you pay for the new product?</h4>
+<table>
+<tr>
+    <tr>
+        <td style="vertical-align: top;">$</td>
+        <td>
+            <input type="text" name="dollars" id="money-input"> <br>
+            <sub><label for="money-input">Dollars</label></sub>
+        </td>
+        <td style="vertical-align: top;">.</td>
+        <td>
+            <input type="text" name="cents" id="unit-input"> <br>
+            <sub><label for="unit-input">Cents</label></sub>
+        </td>
+    </tr>
+</tr>
+</table>
+     <h4>What features would you like to see in the new product.</h4>
+     <textarea></textarea>
+<p>Please rate your level of agreement with the following statements.</p><br>
+<table border="2">
+    <tr>
+        <th></th>
+        <th>Strongly Disagree</th>
+        <th>Disagree</th>
+        <th>Agree</th>
+        <th>Strongly Agree</th>
+    </tr>
+    <tr>
+        <th>Our products are priced fairly.</th>
+        <th><input type="radio" name="Our products are priced fairly"></th>
+        <th><input type="radio" name="Our products are priced fairly"></th>
+        <th><input type="radio" name="Our products are priced fairly"></th>
+        <th><input type="radio" name="Our products are priced fairly"></th>
+    </tr>
+    <tr>
+        <th>Our products are high quality.</th>
+        <th><input type="radio" name="Our products are high quality"></th>
+        <th><input type="radio" name="Our products are high quality"></th>
+        <th><input type="radio" name="Our products are high quality"></th>
+        <th><input type="radio" name="Our products are high quality"></th>
+    </tr>
+    <tr>
+        <th>You would recommend our product to a friend or coworker.</th>
+        <th><input type="radio" name="You would recommend our product to a friend or coworker"></th>
+        <th><input type="radio" name="You would recommend our product to a friend or coworker"></th>
+        <th><input type="radio" name="You would recommend our product to a friend or coworker"></th>
+        <th><input type="radio" name="You would recommend our product to a friend or coworker"></th>
+    </tr>
+</table>
+    <div>
+    <input type="submit" value="Submit">
+    </div>
+</body>
+</html>
