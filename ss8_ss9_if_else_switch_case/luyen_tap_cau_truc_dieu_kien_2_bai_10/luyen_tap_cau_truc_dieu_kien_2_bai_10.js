@@ -1,10 +1,22 @@
 function bm(){
-    let dien_nang_tieu_thu = document.getElementById("n1").value;
-    let don_gia_dien = document.getElementById("n2").value;
-    let tien_dien = dien_nang_tieu_thu*don_gia_dien
-    if (dien_nang_tieu_thu> 0 && don_gia_dien >0 ) {
-        document.getElementById("result").innerHTML = "Giá điện :" + tien_dien + " VNĐ "
-    }else {
-        document.getElementById("result").innerHTML = "Giá trị nhập vào không hợp lệ."
-    }
+    let kWh = document.getElementById("n1").value;
+    let bac1=kWh*2927;
+    let bac2=kWh*2834;
+    let bac3=kWh*2536;
+    let bac4=kWh*2014;
+    let bac5=kWh*1734;
+    let bac6=kWh*1678;
+        if (kWh>400) {
+            document.getElementById('result').innerHTML = 'Tiền bạn phải trả: ' + bac1 + ' VND';
+        } else if (kWh>300) {
+            document.getElementById('result').innerHTML = 'Tiền bạn phải trả: ' + bac2 + ' VND';
+        } else if (kWh>200) {
+            document.getElementById('result').innerHTML = 'Tiền bạn phải trả: ' + bac3 + ' VND';
+        } else if (kWh>100) {
+            document.getElementById('result').innerHTML = 'Tiền bạn phải trả: ' + bac4 + ' VND';
+        } else if (kWh>50) {
+            document.getElementById('result').innerHTML = 'Tiền bạn phải trả: ' + bac5 + ' VND';
+        }else {
+            document.getElementById('result').innerHTML = 'Tiền bạn phải trả: ' + bac6 + ' VND';
+        }
 }
