@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Đếm số</h1>
+<p id="result"></p>
+<script>
+    let number='';
+    for (let i=1;i<=100;i++){
+        number= number + i + "<br>";
+        if (i===99){
+            alert('Bạn đã hoàn thành')
+            break;
+        }
+    }
+    document.getElementById('result').innerHTML=number;
+</script>
+</body>
+</html>
