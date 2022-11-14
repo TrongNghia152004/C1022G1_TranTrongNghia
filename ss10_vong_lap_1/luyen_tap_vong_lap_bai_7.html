@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+  let a = 0
+  let result = ""
+  for (let i=1; i<=100;i++){
+    a=i;
+    if (i % 15===0) {
+      a = 'FizzBuzz'
+    } else if (i %3===0) {
+      a = "Fizz"
+    }else if (i%5===0) {
+      a = 'Buzz'
+    }
+    result= result+ a + ' ' + "<br>";
+  }document.getElementById("result").innerHTML = result
+</script>
+</body>
+</html>

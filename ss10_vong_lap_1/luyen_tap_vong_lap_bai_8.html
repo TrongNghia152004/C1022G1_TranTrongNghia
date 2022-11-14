@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+text-align: center;
+        }
+        button{
+            height: 400px;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+<h1 style="color: red">HỌC KHÔNG CHƠI ĐÁNH RƠI TUỔI TRẺ, CHƠI KHÔNG HỌC VỪA KHOẺ VỪA VUI</h1>
+<h2>Trời cho</h2>
+<button onclick="game()" style="background-color: yellow"><h1 style="color: red">Băt đầu</h1></button>
+<script>
+function game(){
+    let number = +prompt("Mời nhập khoảng bạn muốn chọn")
+    let number_random = Math.floor(Math.random()* number)
+    console.log(number_random)
+    let number_check = +prompt("Mời bạn nhập số muốn chọn")
+    count = 0;
+    while (number_check !== number_random){
+        count++;
+        if (count === 3){
+        alert("Bạn đã hết lượt")
+            break;
+        }else if (number_check < number_random){
+            alert("Phải cao hơn cơ")
+        }else if (number_check > number_random){
+            alert("Phải nhỏ hơn cơ")
+        }else {
+            alert("Chúc bạn may mắn lần sau")
+        }
+        number_check = +prompt ("Mời bạn nhập số muốn chọn");
+    }
+    if (count === 3) {
+        document.write("Bạn hết số lần đoán")
+    } else {
+        document.write("Bạn đã đoán đúng số. Chúc mừng bạn!")
+    }
+}
+</script>
+</body>
+</html>
