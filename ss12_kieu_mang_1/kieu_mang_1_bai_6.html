@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = []
+    let n = +prompt("Nhập một chuỗi số nguyên")
+    for (let i=0;i < n; i++){
+        arr[i] = +prompt("Nhập các số nguyên")
+    }document.write(arr + "<br>")
+    let V = +prompt('Nhập vào giá trị bất kì');
+    for (let i = 0; i < arr.length; i++) {
+        if (V === arr[i]) {
+            document.write(V + " " + " is in the array");
+        } else {
+            document.write(V + " " + " is not the array");
+        }
+    }
+</script>
+</body>
+</html>
