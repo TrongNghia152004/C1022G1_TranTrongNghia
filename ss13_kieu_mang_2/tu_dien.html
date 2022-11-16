@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <input type="text" placeholder="Mời bạn nhập từ" id="word">
+  <button onclick="dich()">Constale</button>
+  <p id="result"></p>
+<script>
+  let a = ['Love', 'Hot', 'Cold'];
+  let b = ['Tình yêu', 'Nóng', 'Lạnh'];
+  let flag = false;
+
+  function dich() {
+    let eng = ["love", "hate", "hot", "cold",];
+    let vn = ["yêu", "ghét", "nóng", "lạnh",];
+    let tu = document.getElementById('word').value;
+    let a = eng.indexOf(tu);
+    document.getElementById('result').innerHTML = vn[a];
+  }
+</script>
+</body>
+</html>
