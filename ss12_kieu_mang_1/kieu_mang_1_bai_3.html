@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+  let a = [];
+  let tb = 0;
+  let n = +prompt('Số phần tử bạn cần nhập');
+  for (let i = 1; i < n; i++) {
+    a[i] = +prompt('Nhap cho phan tu la:  ' + i);
+    if (i === 1) {
+      max = +a[1];
+    }
+    if (a[i] > max) {
+      max = +a[i]
+    }
+    tb += a[i]/n
+  }
+  document.getElementById("result").innerHTML = 'số lớn nhất là ' + max
+  document.getElementById("result").innerHTML = 'trung bình của các phần tử trong mảng là ' + tb
+</script>
+</body>
+</html>
