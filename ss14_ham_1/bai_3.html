@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+
+  function soSanh(a,b){
+    a = +prompt("Nhập giá trị")
+    b = +prompt("Nhập giá trị")
+      if (a>b){
+        return "Giá trị a lớn hơn b"
+      }else {
+        return a+b
+      }
+  }document.getElementById("result").innerHTML = "Tổng của a và b là: " + soSanh()
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="so" placeholder="Nhập 1 số vào">
+<button onclick="giatri()">Kiểm tra</button>
+<p id="result"></p>
+<script>
+    function giatri(){
+        let k = +document.getElementById("so").value;
+        let gia_tri_thay_doi = k + 1
+        document.getElementById("result").innerHTML = gia_tri_thay_doi
+    }
+</script>
+</body>
+</html>

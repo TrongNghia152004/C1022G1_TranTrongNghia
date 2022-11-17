@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Mời bạn nhập từ" id="word">
+<button onclick="ngoiSao()">Kết quả</button>
+<p id="result"></p>
+<script>
+function ngoiSao(){
+  let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"];
+  let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" , "Leo"];
+  let tu = document.getElementById('word').value;
+  let a = star.indexOf(tu);
+  document.getElementById('result').innerHTML = constellation[a];
+}
+</script>
+</body>
+</html>

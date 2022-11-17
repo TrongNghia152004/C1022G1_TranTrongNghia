@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="so" placeholder="Nhập vào giá trị">
+<button onclick="binhPhuong()">Kết quả</button>
+<p id="result"></p>
+<script>
+  function binhPhuong(){
+    let a = document.getElementById("so").value;
+    let result = Math.sqrt(a)
+      document.getElementById("result").innerHTML = "Bình phương của " + a + "là: " + result
+  }
+</script>
+</body>
+</html>

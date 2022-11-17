@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="bankinh" placeholder="Mời bạn nhập bán kính hình tròn">
+<button onclick="dienTich()">Diện tích</button>
+<button onclick="chuVi()">Chu vi</button>
+<p id="result"></p>
+<script>
+  function dienTich(){
+let a = document.getElementById("bankinh").value;
+let s = a*a*3.14
+    document.getElementById("result").innerHTML = "Diện tích hình tròn là: " + s
+  }
+  function chuVi(){
+    let a = document.getElementById("bankinh").value;
+    let c = 2*a*3.14
+    document.getElementById("result").innerHTML = "Chu vi hình tròn là: " + c
+  }
+</script>
+</body>
+</html>
