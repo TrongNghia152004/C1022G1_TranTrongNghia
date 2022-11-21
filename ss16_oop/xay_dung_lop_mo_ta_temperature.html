@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(Celsius) {
+            this.Celsius = Celsius;
+        }
+
+        cSangF() {
+            document.write("F " + "= " + (this.Celsius * 9/5 + 32)+ " độ F "  + "<br>");
+        }
+            cSangKevin()
+            {
+                document.write("K " + "= " + (this.Celsius * 273.15 + " K"));
+            }
+    }
+    let temperature = new Temperature(+prompt());
+    temperature.cSangF()
+    temperature.cSangKevin()
+</script>
+</body>
+</html>
