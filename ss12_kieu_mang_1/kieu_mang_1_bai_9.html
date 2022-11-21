@@ -6,16 +6,18 @@
 </head>
 <body>
 <script>
-  let a = Array(10);
-  for (let i = 0 ; i < a.length; i++){
-    a[i] = prompt("Mời bạn nhập các phần tử a")
-  }document.write("Mảng a: " +a + "<br>")
-  let b = Array(10);
-  for (let j = 0; j < b.length; j++){
-    b[j] = prompt("Mời bạn nhập các phần tử b")
-  }document.write("Mảngb: " + b + "<br>")
-  let c = [].concat(a,b)
-  document.write("Mảng c: "+c )
+    let a = Array(10);
+    for (let i = 0; i < a.length; i++) {
+        a[i] = prompt("Mời bạn nhập các phần tử a");
+    }
+    document.write("Mảng a: " + a + "<br>");
+    let b = Array(10);
+    for (let j = 0; j < b.length; j++) {
+        b[j] = prompt("Mời bạn nhập các phần tử b");
+    }
+    document.write("Mảngb: " + b + "<br>");
+    let c = [].concat(a, b);
+    document.write("Mảng c: " + c);
 </script>
 </body>
 </html>

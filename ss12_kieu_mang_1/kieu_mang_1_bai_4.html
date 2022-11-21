@@ -6,13 +6,17 @@
 </head>
 <body>
 <script>
-   let n=+prompt('Nhập chuỗi số nguyên bạn muốn: ')
-   let a= [];
-   for (let i=0;i<n;i++) {
-     a[i] = +prompt("Mời bạn nhập số nguyên")
-   }
-     document.write(a + '<br>')
-     document.write(a.reverse() + '<br>')
+    let b = [];
+    let a = [];
+    let n = +prompt('Số phần tử bạn cần nhập');
+    let count = 0;
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt('Nhap cho phan tu la:');
+    }
+        for (let j = a.length -1; j >= 0; j--) {
+            b[count] = a[j];
+            count++;
+    }    document.write("Mảng đảo ngược là: " + b)
 </script>
 </body>
 </html>

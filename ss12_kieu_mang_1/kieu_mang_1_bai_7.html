@@ -6,21 +6,20 @@
 </head>
 <body>
 <script>
-    let str = "";
-    let arr = Array(10)
+    let arr = Array(10);
     for (let i = 0; i < 10; i++) {
-        arr[i] = +prompt("Nhập các số nguyên")
+        arr[i] = +prompt("Nhập các số nguyên");
     }
-    document.write(arr + "<br>")
+    document.write(arr + "<br>");
     let v = +prompt('Nhập vào giá trị bất kì');
     for (let j = 0; j < arr.length; j++) {
         if (arr[j] === v) {
-            arr.splice(j , 1)
-            j = j - 1
-            arr.push("0")
+            arr.splice(j , 1);
+            j = j - 1;
+            arr.push("0");
         }
     }
-    document.write(arr)
+    document.write(arr);
 </script>
 </body>
 </html>

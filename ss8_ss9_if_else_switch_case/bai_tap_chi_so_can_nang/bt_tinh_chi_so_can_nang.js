@@ -1,6 +1,9 @@
 function Ok(){
 let height = document.getElementById("height").value;
 let weight = document.getElementById("weight").value;
+
+
+
 let bmi = weight / ( height * 2 )
     let result = ""
     if (bmi < 16)

@@ -7,19 +7,21 @@
 <body>
 <script>
     let str = "";
-    let arr = Array(10)
-    for (let i=0;i < 10; i++){
-        arr[i] = +prompt("Nhập các số nguyên")
-    }document.write(arr + "<br>")
+    let arr = Array(10);
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt("Nhập các số nguyên");
+    }
+    document.write(arr + "<br>")
     let v = +prompt('Nhập vào giá trị bất kì');
-    for (let j=0 ; j < arr.length; j++) {
+    for (let j = 0; j < arr.length; j++) {
         if (arr[j] === v) {
-            str = v + " " + " is in the array"
+            str = v + " " + " is in the array";
             break;
         } else {
-            str = v + " " + " is not the array"
+            str = v + " " + " is not the array";
         }
-    }document.write(str)
+    }
+    document.write(str);
 </script>
 </body>
 </html>

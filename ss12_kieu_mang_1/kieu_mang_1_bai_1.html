@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +6,18 @@
 </head>
 <body>
 <script>
-    let mangsolonhoacbang10 = []
-    let mangso = []
+    let mangsolonhoacbang10 = [];
+    let mangso = [];
     for (let i = 0; i < 10; i++) {
-        mangso[i] = +prompt("Mời bạn nhập các phần tử")
-    }document.write("mangso =["+mangso+"]<br>")
+        mangso[i] = +prompt("Mời bạn nhập các phần tử");
+    }
+    document.write("mangso =[" + mangso + "]<br>");
     for (let i = 0; i < mangso.length; i++) {
         if (mangso[i] >= 10) {
-            mangsolonhoacbang10.push(mangso[i])
+            mangsolonhoacbang10.push(mangso[i]);
         }
-    } document.write("Các phần tử lớn hơn hoặc bằng 10 trong mang so là : ["+mangsolonhoacbang10+"]<br>")
+    }
+    document.write("Các phần tử lớn hơn hoặc bằng 10 trong mang so là : [" + mangsolonhoacbang10 + "]<br>");
 
 </script>
 </body>
