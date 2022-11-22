@@ -5,15 +5,52 @@
     <title>Title</title>
 </head>
 <body>
+<canvas id="rectangle" width="500" height="500"></canvas>
+<p id="result"></p>
 <script>
-class  Rectangle{
-    constructor(height,width,area,perimeter) {
-        this.height = height;
-        this.width = width;
-        this.area = area;
-        this.perimeter = perimeter;
+    class Rectangle {
+        constructor(height, width) {
+            this.height = height;
+            this.width = width;
+        }
+
+        area() {
+            document.write("S" + " = " + this.height * this.width + "<br>");
+        }
+
+        perimeter() {
+            document.write("C" + " = " + (this.height + this.width) * 2);
+        }
+
+        setWidth(newWidth) {
+            this.width = newWidth;
+        }
+
+        getWidth(newWidth) {
+            return this.width;
+        }
+
+        setHeight(newHeight) {
+            this.height = newHeight;
+        }
+
+        getHeight(newHeight) {
+           return  this.height = newHeight;
+        }
     }
-}
+    let rectangle = new Rectangle(250,40);
+rectangle.area();
+rectangle.perimeter();
+
+    // rectangle.setHeight(prompt("Nhập lại chiều cao mới"));
+    // rectangle.setWidth(prompt("Nhập lại chiều dài mới"));
+
+    let canvasRectangle = document.getElementById("rectangle");
+    let ctx = canvasRectangle.getContext("2d");
+    ctx.rect(200, 200, this.height, this.width);
+    ctx.stroke();
+    ctx.fillStyle = "yellow";
+    ctx.fill();
 </script>
 </body>
 </html>
