@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Kiểm tra nguyên âm</h1>
+<p id="result"></p>
+<script>
+    let n = prompt("Nhập các kí tự trong bảng chữ cái tiếng anh");
+    switch (n) {
+        case "U":
+        case "E":
+        case "O":
+        case "A":
+        case "I":
+        case "u":
+        case "e":
+        case "o":
+        case "a":
+        case "i":
+            document.getElementById("result").innerHTML = n + " là nguyên âm";
+            break;
+        default: {
+            document.getElementById("result").innerHTML = n + " là phụ âm.";
+        }
+    }
+</script>
+</body>
+</html>

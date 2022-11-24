@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+let n = prompt("Nhập độ dài mảng a");
+let a = [];
+let b = [];
+let sum = 0;
+for(let i = 0 ; i < n; i++) {
+    a[i] = +prompt("Nhập các phần tử mảng a")
+}
+for (let i = 0 ; i < a.length ; i++){
+    sum += a[i];
+    b.push(sum);
+}document.getElementById("result").innerHTML ="Prefix sums của mảng a là: " + "[" + b + "]";
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numerator = [];
+    let denominators = [];
+    let max = 0;
+    let a;
+    let n = prompt("Nhập độ dài mảng numerator");
+    for (let i = 0; i < n; i++) {
+        numerator[i] = +prompt("Nhập các phần tử mảng numerator");
+    }
+    document.write("các phần tử mảng numerator " + numerator + "<br>");
+    let k = prompt("Nhập độ dài mảng denominators");
+    for (let i = 0; i < k; i++) {
+        denominators[i] = +prompt("Nhập các phần tử mảng denominators");
+    }
+    document.write("các phần tử mảng denominators " + denominators + "<br>");
+    for (let i = 0; i < denominators.length; i++) {
+        if (numerator[i] / denominators[i] > max) {
+            max = numerator[i] / denominators[i];
+            a = numerator[i] + "/" + denominators[i] + " là phân số lớn nhất, tại vị trí " + i;
+        }
+    }
+    document.write(a);
+</script>
+</body>
+</html>

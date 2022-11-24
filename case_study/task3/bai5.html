@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let price;
+    let drink = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa"];
+    document.write("Menu có: " + drink + "<br>");
+    do {
+         i = +prompt("Nhập thức uống muốn chọn");
+        let amount = +prompt("Nhập số lượng thức uống");
+        switch (i) {
+            case 1:
+                price = amount * 15000;
+                break;
+            case 2:
+                price = amount * 25000;
+                break;
+            case 3:
+                price = amount * 10000;
+                break;
+            case 4:
+                price = amount * 10000;
+                break;
+            case 5:
+                price = amount * 5000;
+                break;
+            case 6:
+                price = amount * 30000;
+                break;
+            case 7:
+                document.write("thoát gọi món")
+                break;
+        }
+    } while (i >= 1 || i <= 7)
+    document.write("giá tiền" + price);
+</script>
+</body>
+</html>

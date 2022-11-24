@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính thuế thu nhập của nhân viên</h1>
+<p id="result"></p>
+<script>
+    let n = +prompt("Nhập lương nhân viên");
+    let net_salary = 0;
+    let tax = 0;
+    if (n === 15000000) {
+        tax = n * 20 / 100;
+        net_salary = n - tax;
+    } else if (n < 15000000 && n >= 7000000) {
+        thue = n * 10 / 100;
+        net_salary = n - tax;
+    } else if (n < 7000000) {
+        thue = n * 5 / 100;
+        net_salary = n - tax;
+    }
+    document.getElementById("result").innerHTML = "Thuế thu nhập là : " + thue + "<br>" + "Lương ròng của nhân viên là : " + net_salary;
+
+</script>
+</body>
+</html>

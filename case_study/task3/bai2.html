@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    let a = [];
+    let b = [];
+    let c = [];
+    let n = prompt("Nhập độ dài mảng a")
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt("Nhập các phần tử mảng a");
+    }
+    let k = prompt("Nhập độ dài mảng b")
+    for (let i = 0; i < k; i++) {
+        b[i] = +prompt("Nhập các phần tử mảng b");
+    }
+    for (let i = 0; i < b.length; i++) {
+        if (a.indexOf(b[i]) === -1) {
+            c.push(b[i]);
+        }
+    }
+    document.write("Các phần tử của mảng a là: " + a + "<br>");
+    document.write("Các phần tử của mảng b là: " + b + "<br>");
+    document.write("Các phần tử xuất hiện trong b nhưng không xuất hiện trong b là: " + c);
+</script>
+</body>
+</html>
