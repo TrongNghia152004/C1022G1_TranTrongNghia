@@ -8,20 +8,21 @@
 <p id="result"></p>
 <script>
     let result = "";
-    for (let i=1; i<=4; i++) {
-        if (i==1 || i==4) {
-            for (let i=0; i<5; i++) {
-                result+= '*';
+    for (let i = 1; i <= 4; i++) {
+        if (i == 1 || i == 4) {
+            for (let i = 0; i < 5; i++) {
+                result += '*';
             }
             result += '</br>';
         } else {
-            result+= '*';
-            for (let j=0; j<3; j++) {
-                result+='&ensp;';
+            result += '*';
+            for (let j = 0; j < 3; j++) {
+                result += '&ensp;';
             }
-            result+= '*' + "</br>";
+            result += '*' + "</br>";
         }
-    }document.getElementById("result").innerHTML = result;
+    }
+    document.getElementById("result").innerHTML = result;
 </script>
 </body>
 </html>
