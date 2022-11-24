@@ -5,16 +5,23 @@
     <title>Title</title>
 </head>
 <body>
+<p id="result"></p>
 <script>
-  for (let i = 0 ; i < 4 ; i++){
-    for (let j = 0 ; j < 5 ; j++){
-      if (j === 0 || i === 2 || j=== 4 ){
-        document.write("*")
-      }
-    else {
-
-    }
-  }
+    let result = "";
+    for (let i=1; i<=4; i++) {
+        if (i==1 || i==4) {
+            for (let i=0; i<5; i++) {
+                result+= '*';
+            }
+            result += '</br>';
+        } else {
+            result+= '*';
+            for (let j=0; j<3; j++) {
+                result+='&ensp;';
+            }
+            result+= '*' + "</br>";
+        }
+    }document.getElementById("result").innerHTML = result;
 </script>
 </body>
 </html>
