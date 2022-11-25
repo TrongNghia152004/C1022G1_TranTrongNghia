@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function countFrom(str) {
+        let newStr = '';
+        for (let i = 0; i < str.length; i++) {
+            if (newStr.includes(str[i]) === false) {
+                newStr = newStr + str[i];
+            }
+        }
+        return newStr;
+    }
+
+    let str = prompt("Nhập kí tự trong chuỗi");
+    document.write("Các kí tự khác nhau là: " + countFrom(str));
+</script>
+</body>
+</html>
