@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tongSoChan(arr, row, col) {
+        let sum = 0;
+        for (let i = 0; i < row; i++) {
+            for (let j = 0; j < col; j++) {
+                if (arr[i][j] % 2 === 0) {
+                    sum += arr[i][j];
+                }
+            }
+        }
+        return sum;
+    }
+
+    let m = +prompt('Số hàng của mảng');
+    let n = +prompt('Số cột của mảng');
+    let newArr1 = [];
+    let newArr2 = [];
+    for (let i = 0; i < m; i++) {
+        newArr1.push(newArr2);
+        for (let j = 0; j < n; j++) {
+            newArr2[j] = +prompt("Nhập phần tử thứ " + j + " của mảng " + i);
+        }
+    }
+    document.write('Tổng số chẵn trong ma trận là ' + tongSoChan(newArr1, m, n));
+
+</script>
+</body>
+</html>

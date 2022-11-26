@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function max(arr1) {
+        let max;
+        for (let i = 0; i < n; i++) {
+            for (let j = 0; j < k; j++) {
+                if (i === j && i === 0) {
+                    max = arr1[i][j];
+                }
+                if (arr1[i][j] > max) max = arr1[i][j];
+            }
+        }
+        return max;
+    }
+
+    function min(arr2) {
+        let min;
+        for (let i = 0; i < n; i++) {
+            for (let j = 0; j < k; j++) {
+                if (i === j && i === 0) {
+                    min = arr2[i][j];
+                }
+                if (arr2[i][j] < min) min = arr2[i][j];
+            }
+        }
+        return min;
+    }
+
+    let n = +prompt('Nhập n: ');
+    let k = +prompt('Nhập k: ');
+    let newArr1 = [];
+    let newArr2 = [];
+    for (let i = 0; i < n; i++) {
+        newArr1.push(newArr2)
+        for (let j = 0; j < k; j++) {
+            newArr2[j] = prompt('Nhập phần tử thứ ' + j + ' ở hàng thứ ' + i);
+        }
+    }
+    document.write("Max là : " + max(newArr1) + " và min là: " + min(newArr1));
+</script>
+</body>
+</html>
